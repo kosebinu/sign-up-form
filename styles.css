@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    background: url(images/green-leaf.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    box-sizing: content-box;
+    /* border: 2px solid red; */
+    margin-top: 200px;
+    background-color: hsla(10, 6%, 20%, 0.541);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    font-size: 70px;
+    padding: 10px 0;
+
+}
+
+#odinHead {
+    height: 80px;
+}
+
+.title > p {
+    font-family: Norse-Bold;
+    padding-top: 20px;
+    font-size: 55px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex: 1;
+}
+
+.footer > p {
+    font-weight: 100;
+    padding: 10px 100px;
+    font-size: 12px;
+}
+
+.footer a:link {
+    color: white;
+}
+
+.footer a:visited {
+    color: rgb(211, 211, 198);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 2;
+}
+
+.upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: #f3f5f5;
+    flex: 1;
+    padding-left: 40px;
+    padding-right: 20%;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 5px;
+
+}
+
+span {
+    font-style: italic;
+}
+
+.msg2 {
+    padding-bottom: 20px;
+}
+
+.middle {
+    background-color: white;
+    padding-left: 40px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 5px 10px #cacbcb;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.middle > p {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.inputs {
+    display: flex;
+    gap: 60px;
+}
+
+input {
+    /* background-color: red; */
+    margin-bottom: 15px;
+    width: 200px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: hsl(0, 5%, 21%);
+    font-size: 12px;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.bottom {
+    background-color: #f3f5f5;
+    flex: 1;
+    padding-left: 40px;
+}
+
+button {
+    background-color: hsl(92, 20%, 35%);
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    margin-top: 30px;
+    color: whitesmoke;
+    font-weight: 700;
+    box-shadow: 0px 5px 10px #788383;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: hsl(92, 20%, 40%);
+}
+
+.bottom > p {
+    font-size: 19px;
+}
+
+.bottom a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom a:link {
+    color: hsl(92, 20%, 35%);
+}
+.bottom a:visited {
+    color: hsl(92, 20%, 35%);
+}
+
+input:invalid {
+    outline: 1px solid red;
+}
+
+input:focus {
+    outline: 1px solid #2273f5;
+    box-shadow: 0px 5px 10px #cacbcb;
+}
